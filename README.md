@@ -1,31 +1,36 @@
 # Miguel Antonio Quevedo Simoza (@M4QSZ)
 
-**Multiplatform Software & Game Engineer** · Systems Engineering Senior (`UBA '27`, Programming Concentration) · State of Aragua, Venezuela (**Remote · Hybrid · On-site · Open to relocate**)
+**Multiplatform Software & Game Engineer** · Systems Engineering (`UBA '27`, Programming Concentration) · State of Aragua, Venezuela (**Remote · Hybrid · On-site · Open to relocate**)
 
-🌐 **Portfolio & CV:** [m4qsz.github.io/en](https://m4qsz.github.io/en/) (EN) · [m4qsz.github.io](https://m4qsz.github.io/) (ES) · [Resume / CV](https://m4qsz.github.io/en/cv/)
+🌐 **Portfolio & Resume:** [m4qsz.github.io/en](https://m4qsz.github.io/en/) (EN) · [m4qsz.github.io](https://m4qsz.github.io/) (ES) · [Printable / ATS CV](https://m4qsz.github.io/en/cv/)
 
 ---
 
-## What I Build (EN)
+## Public Open-Source Crates (Green CI)
 
-- **Multiplatform & Native Systems:** Flutter (`Skia` / `Impeller`), Dart, Rust (`flutter_rust_bridge`, UDP/TCP LAN discovery, AES-GCM), Kotlin (Android foreground services), modular clean architecture, AppSec & Git LFS.
-- **Data & Offline-First:** Local persistence with Isar and SQLite; schema design and migration from NoSQL (`Firebase` / `Cloud Firestore`) to SQL (`Supabase` / `PostgreSQL` / `MySQL`).
-- **Web & Applied AI:** Next.js, React, TypeScript, Astro, Tailwind CSS, Python, and independent LLM workflows (`Meson IA`).
-- **Game Engines:** **Brasas** (shared Flutter package + decoupled **Unity 6.3 LTS** `C#` build with EditMode/PlayMode tests), **El Pueblo del Faro** (Roblox Studio / `Luau` / Rojo, in development), `Bevy` (Rust ECS prototype), and Godot fundamentals.
+| Repository | Stack | What it proves | CI |
+| :--- | :--- | :--- | :---: |
+| **[`lan-delta-sync`](https://github.com/M4QSZ/lan-delta-sync)** | Rust, `ChaCha20-Poly1305`, HLC, CRDT | Offline-first LAN sync primitives: Hybrid Logical Clock, LWW CRDT with tombstones, anti-replay AEAD framing, bounded backoff outbox, 7 integration tests. | [![CI](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml) |
+| **[`ffi-arena-bridge`](https://github.com/M4QSZ/ffi-arena-bridge)** | Rust, C99 ABI, `dart:ffi` | Zero-dep C-ABI & Flutter/Dart FFI bridge: `u64` generational handles, `catch_unwind` panic shield, double-free-safe buffers, deterministic trigram search, C99 `cdylib` smoke test. | [![CI](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml) |
 
-### Selected Highlights
+## Live Web Deployments (Vercel)
 
-- **Meson *(private repository)*:** End-to-end restaurant operations ecosystem across Desktop, Mobile, and Web (business shell, Flame isometric floor editor, 44-module Store, P2P LAN network, customer community app, and delivery dispatch). Supervised specific Flutter deliverables from a collaborator. *(Real workspace screenshots & technical case studies published on [m4qsz.github.io/en](https://m4qsz.github.io/en/))*
-- **Alma *(Next.js + Supabase)*:** Storefront e-commerce platform featuring fuzzy search (`Fuse.js`), admin analytics (`Recharts`), transactional email scaffolding (`Resend`), and demo checkout.
-- **Technical Lab *([public code samples](https://m4qsz.github.io/en/lab/))***: Inspectable standalone implementations in **Rust** (`local-sync`), **C11 + NASM x64 Assembly** (`fnv-c-asm`), **C++17** (`outbox-cpp`), **PHP 8.2** (`order-quote-php`), and **Swift** (`offline-outbox-swift`).
+- **[SET — Soluciones Eléctricas & Térmicas](https://set-ingenieria.vercel.app)** · Astro + Tailwind CSS service website driven by centralized config.
+- **[MedPulse SOS — QR/NFC Emergency Platform](https://pulsera-medica.vercel.app)** · Astro + TypeScript + Supabase wristband card & catalog prototype.
+
+## Architecture & Product Highlights
+
+- **Meson *(private commercial repository)*:** End-to-end restaurant operations ecosystem across Desktop, Mobile, and Web (Flutter/Dart shell, Rust FFI native modules, Isar offline persistence + Supabase/Postgres sync, Flame floor editor, 44-entry modular Store, customer community & delivery apps). Supervised selected Flutter deliverables from a collaborator. *(Workspace screenshots & architecture case studies at [m4qsz.github.io/en](https://m4qsz.github.io/en/))*
+- **Brasas & El Pueblo del Faro:** Cross-platform action adventure (**Flutter** shared package + decoupled **Unity 6.3 LTS** `C#` build with EditMode/PlayMode tests) and Roblox Studio `Luau` / Rojo prototype.
+- **Technical Lab *([public code samples](https://m4qsz.github.io/en/lab/))***: Standalone implementations in **Rust**, **C11 + NASM x64 Assembly**, **C++17**, **PHP 8.2**, and **Swift**.
 
 ---
 
 ## Español (ES)
 
-Desarrollo software multiplataforma de extremo a extremo (PC, móvil y web): persistencia offline-first, lógica nativa en Rust FFI, interfaces en Flutter/Next.js/Astro, videojuegos en Unity (`C#`) y Roblox (`Luau`), e integración aplicada de LLMs.
+Desarrollo software multiplataforma de extremo a extremo (PC, móvil y web): lógica nativa segura en Rust FFI, redes locales P2P offline-first, interfaces en Flutter / Next.js / Astro, videojuegos en Unity (`C#`) y Roblox (`Luau`), e integración aplicada de LLMs.
 
-- **Portafolio y casos reales:** [m4qsz.github.io](https://m4qsz.github.io/) · [CV / PDF](https://m4qsz.github.io/cv/) · [Laboratorio técnico](https://m4qsz.github.io/laboratorio/)
+- **Portafolio y CV:** [m4qsz.github.io](https://m4qsz.github.io/) · [CV / PDF](https://m4qsz.github.io/cv/) · [Laboratorio técnico](https://m4qsz.github.io/laboratorio/)
 - **Idiomas:** Español y English (bilingüe), Português e Italiano (avanzado), Deutsch y 日本語 (básico).
 
 ## Contact / Contacto
