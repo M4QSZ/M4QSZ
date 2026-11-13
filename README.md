@@ -25,12 +25,13 @@ I build **end-to-end multiplatform software** across desktop, mobile, web, nativ
 
 ### Inspectable Open-Source Systems (Green CI)
 
-Because my flagship commercial product (**Meson**) lives in a private repository, these standalone clean-room crates expose my Rust architecture, memory-safety invariants, tests, and cross-platform CI in public:
+Because my flagship commercial product (**Meson**) lives in a private repository, these standalone clean-room repositories expose my Rust, C99/Dart FFI, and offline-first Dart architecture, tests, and cross-platform CI in public:
 
-| Crate | What It Implements & Proves | Linux + Windows CI |
+| Repository | What It Implements & Proves | Linux + Windows CI |
 | :--- | :--- | :---: |
-| **[`lan-delta-sync`](https://github.com/M4QSZ/lan-delta-sync)** | Offline-first LAN sync primitives: `HybridClock` (HLC with drift guards), `DeltaStore` (LWW CRDT + tombstones), `PeerSession` (`ChaCha20-Poly1305` AAD + 64-slot anti-replay window), bounded `RetryOutbox`, and **7 integration tests + mesh example**. | [![CI](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml) |
+| **[`lan-delta-sync`](https://github.com/M4QSZ/lan-delta-sync)** | Offline-first LAN sync primitives in **Rust**: `HybridClock` (HLC with drift guards), `DeltaStore` (LWW CRDT + tombstones), `PeerSession` (`ChaCha20-Poly1305` AAD + 64-slot anti-replay window), bounded `RetryOutbox`, and **7 integration tests + mesh example**. | [![CI](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml) |
 | **[`ffi-arena-bridge`](https://github.com/M4QSZ/ffi-arena-bridge)** | Zero-dep Rust **C-ABI & `dart:ffi` bridge**: `u64` generational handles (zero raw-pointer UAF), `catch_unwind` panic shield, zero-copy `FfiBytesView`, double-free-safe `FfiOwnedBuffer`, deterministic trigram search, and **live C99 `cdylib` smoke binary in CI**. | [![CI](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml) |
+| **[`dart-offline-outbox`](https://github.com/M4QSZ/dart-offline-outbox)** | Transactional offline-first mutation outbox in **pure Dart**: per-entity write coalescing, jittered exponential `RetryPolicy`, partial batch ACKs (`DispatchOutcome`), dead-letter quarantine, `OutboxJournalStore`, and **strict `dart analyze --fatal-infos` + unit tests**. | [![CI](https://github.com/M4QSZ/dart-offline-outbox/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/dart-offline-outbox/actions/workflows/ci.yml) |
 
 ---
 
@@ -47,12 +48,12 @@ Because my flagship commercial product (**Meson**) lives in a private repository
 
 * **Meson *(private commercial flagship)*:** Multiplatform restaurant operations suite across Desktop, Mobile, and Web — customizable Flutter shell, Flame 2D/isometric floor editor, 44-entry modular Store, local P2P network, Firebase -> Supabase SQL migration, Kotlin Android foreground service, customer community app, and delivery dispatch. *(Real desktop captures & engineering case studies at [m4qsz.github.io/en](https://m4qsz.github.io/en/))*
 * **Brasas & El Pueblo del Faro:** Cross-platform action adventure (**Flutter** shared package + **Unity 6.3 LTS** `C#` with decoupled simulation & EditMode/PlayMode tests) and Roblox Studio `Luau` / Rojo prototype.
-* **Technical Lab *([7 inspectable demos](https://m4qsz.github.io/en/lab/))***: Verified public modules across **Rust**, **C11 + NASM x64 Assembly**, **C++17**, **PHP 8.2**, and **Swift**.
+* **Technical Lab *([8 inspectable demos](https://m4qsz.github.io/en/lab/))***: Verified public modules across **Rust**, **Dart**, **C11 + NASM x64 Assembly**, **C++17**, **PHP 8.2**, and **Swift**.
 
 <details>
 <summary><b>Versión en Español (ES) — Resumen rápido</b></summary>
 
-Desarrollo software multiplataforma de extremo a extremo (PC, móvil y web): interfaces **Flutter/Next.js/Astro**, lógica nativa segura en **Rust (`C-ABI` / `dart:ffi`)**, redes locales **P2P offline-first (`ChaCha20-Poly1305` + CRDT)**, bases locales (`Isar` / `SQLite`) + **PostgreSQL/Supabase**, videojuegos en **Unity (`C#`)** y flujos aplicados con **LLMs**.
+Desarrollo software multiplataforma de extremo a extremo (PC, móvil y web): interfaces **Flutter/Next.js/Astro**, lógica nativa segura en **Rust (`C-ABI` / `dart:ffi`)**, outbox transaccional offline-first en **Dart**, redes locales **P2P offline-first (`ChaCha20-Poly1305` + CRDT)**, bases locales (`Isar` / `SQLite`) + **PostgreSQL/Supabase**, videojuegos en **Unity (`C#`)** y flujos aplicados con **LLMs**.
 
 * **Portafolio interactivo:** [m4qsz.github.io](https://m4qsz.github.io/)
 * **CV imprimible / ATS:** [m4qsz.github.io/cv](https://m4qsz.github.io/cv/)
