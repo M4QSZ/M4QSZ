@@ -1,39 +1,62 @@
-# Miguel Antonio Quevedo Simoza (@M4QSZ)
+<div align="center">
 
-**Multiplatform Software & Game Engineer** · Systems Engineering (`UBA '27`, Programming Concentration) · State of Aragua, Venezuela (**Remote · Hybrid · On-site · Open to relocate**)
+![Miguel Quevedo — Systems, Rust FFI & Multiplatform](./assets/profile-banner.svg)
 
-🌐 **Portfolio & Resume:** [m4qsz.github.io/en](https://m4qsz.github.io/en/) (EN) · [m4qsz.github.io](https://m4qsz.github.io/) (ES) · [Printable / ATS CV](https://m4qsz.github.io/en/cv/)
+<br />
 
----
+[![Portfolio EN](https://img.shields.io/badge/Portfolio_EN-m4qsz.github.io%2Fen-e4a56c?style=for-the-badge&logo=astro&logoColor=white)](https://m4qsz.github.io/en/)
+[![Portafolio ES](https://img.shields.io/badge/Portafolio_ES-m4qsz.github.io-c87b4b?style=for-the-badge&logo=astro&logoColor=white)](https://m4qsz.github.io/)
+[![Resume / CV](https://img.shields.io/badge/Resume_%2F_CV-PDF_%26_ATS-83c6a0?style=for-the-badge&logo=readthedocs&logoColor=101314)](https://m4qsz.github.io/en/cv/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-miguel--quevedo--dev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguel-quevedo-dev/)
 
-## Public Open-Source Crates (Green CI)
-
-| Repository | Stack | What it proves | CI |
-| :--- | :--- | :--- | :---: |
-| **[`lan-delta-sync`](https://github.com/M4QSZ/lan-delta-sync)** | Rust, `ChaCha20-Poly1305`, HLC, CRDT | Offline-first LAN sync primitives: Hybrid Logical Clock, LWW CRDT with tombstones, anti-replay AEAD framing, bounded backoff outbox, 7 integration tests. | [![CI](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml) |
-| **[`ffi-arena-bridge`](https://github.com/M4QSZ/ffi-arena-bridge)** | Rust, C99 ABI, `dart:ffi` | Zero-dep C-ABI & Flutter/Dart FFI bridge: `u64` generational handles, `catch_unwind` panic shield, double-free-safe buffers, deterministic trigram search, C99 `cdylib` smoke test. | [![CI](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml) |
-
-## Live Web Deployments (Vercel)
-
-- **[SET — Soluciones Eléctricas & Térmicas](https://set-ingenieria.vercel.app)** · Astro + Tailwind CSS service website driven by centralized config.
-- **[MedPulse SOS — QR/NFC Emergency Platform](https://pulsera-medica.vercel.app)** · Astro + TypeScript + Supabase wristband card & catalog prototype.
-
-## Architecture & Product Highlights
-
-- **Meson *(private commercial repository)*:** End-to-end restaurant operations ecosystem across Desktop, Mobile, and Web (Flutter/Dart shell, Rust FFI native modules, Isar offline persistence + Supabase/Postgres sync, Flame floor editor, 44-entry modular Store, customer community & delivery apps). Supervised selected Flutter deliverables from a collaborator. *(Workspace screenshots & architecture case studies at [m4qsz.github.io/en](https://m4qsz.github.io/en/))*
-- **Brasas & El Pueblo del Faro:** Cross-platform action adventure (**Flutter** shared package + decoupled **Unity 6.3 LTS** `C#` build with EditMode/PlayMode tests) and Roblox Studio `Luau` / Rojo prototype.
-- **Technical Lab *([public code samples](https://m4qsz.github.io/en/lab/))***: Standalone implementations in **Rust**, **C11 + NASM x64 Assembly**, **C++17**, **PHP 8.2**, and **Swift**.
+</div>
 
 ---
 
-## Español (ES)
+### "I design the product. I build the systems underneath."
 
-Desarrollo software multiplataforma de extremo a extremo (PC, móvil y web): lógica nativa segura en Rust FFI, redes locales P2P offline-first, interfaces en Flutter / Next.js / Astro, videojuegos en Unity (`C#`) y Roblox (`Luau`), e integración aplicada de LLMs.
+I build **end-to-end multiplatform software** across desktop, mobile, web, native systems, and game engines — taking concepts from 0-to-1 UI fidelity (`on-model`) down to memory-safe native Rust FFI boundaries, encrypted peer-to-peer sync, and relational databases.
 
-- **Portafolio y CV:** [m4qsz.github.io](https://m4qsz.github.io/) · [CV / PDF](https://m4qsz.github.io/cv/) · [Laboratorio técnico](https://m4qsz.github.io/laboratorio/)
-- **Idiomas:** Español y English (bilingüe), Português e Italiano (avanzado), Deutsch y 日本語 (básico).
+* **Core Stack:** `Flutter` (`Skia` / `Impeller`) · `Dart` · `Rust` · `C#` (`Unity`) · `TypeScript` (`Next.js` / `Astro`) · `Kotlin` · `PostgreSQL` / `Supabase` / `Isar`
+* **Education:** Systems Engineering (`UBA '27`, Programming Concentration) · State of Aragua, Venezuela (**Remote · Hybrid · On-site · Open to relocate**)
+* **Languages:** Spanish & English (`Native / Bilingual`) · Portuguese & Italian (`Advanced`) · German & Japanese (`Basic`)
 
-## Contact / Contacto
+---
 
-- **LinkedIn:** [linkedin.com/in/miguel-quevedo-dev](https://www.linkedin.com/in/miguel-quevedo-dev/)
-- **Email:** miguel.270799@gmail.com
+### Inspectable Open-Source Systems (Green CI)
+
+Because my flagship commercial product (**Meson**) lives in a private repository, these standalone clean-room crates expose my Rust architecture, memory-safety invariants, tests, and cross-platform CI in public:
+
+| Crate | What It Implements & Proves | Linux + Windows CI |
+| :--- | :--- | :---: |
+| **[`lan-delta-sync`](https://github.com/M4QSZ/lan-delta-sync)** | Offline-first LAN sync primitives: `HybridClock` (HLC with drift guards), `DeltaStore` (LWW CRDT + tombstones), `PeerSession` (`ChaCha20-Poly1305` AAD + 64-slot anti-replay window), bounded `RetryOutbox`, and **7 integration tests + mesh example**. | [![CI](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/lan-delta-sync/actions/workflows/ci.yml) |
+| **[`ffi-arena-bridge`](https://github.com/M4QSZ/ffi-arena-bridge)** | Zero-dep Rust **C-ABI & `dart:ffi` bridge**: `u64` generational handles (zero raw-pointer UAF), `catch_unwind` panic shield, zero-copy `FfiBytesView`, double-free-safe `FfiOwnedBuffer`, deterministic trigram search, and **live C99 `cdylib` smoke binary in CI**. | [![CI](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/M4QSZ/ffi-arena-bridge/actions/workflows/ci.yml) |
+
+---
+
+### Live Web Deployments (Vercel)
+
+| Deployment | Stack | Scope |
+| :--- | :--- | :--- |
+| **[SET — Ingeniería Eléctrica & Climatización](https://set-ingenieria.vercel.app)** | `Astro` · `Tailwind CSS` · `JavaScript` | Production service website backed by centralized business/project configuration. |
+| **[MedPulse SOS — Emergency QR/NFC Platform](https://pulsera-medica.vercel.app)** | `Astro` · `TypeScript` · `Supabase` | Interactive prototype for QR/NFC emergency cards, wristband catalog, and order tracking. |
+
+---
+
+### Selected Architecture & Product Highlights
+
+* **Meson *(private commercial flagship)*:** Multiplatform restaurant operations suite across Desktop, Mobile, and Web — customizable Flutter shell, Flame 2D/isometric floor editor, 44-entry modular Store, local P2P network, Firebase -> Supabase SQL migration, Kotlin Android foreground service, customer community app, and delivery dispatch. *(Real desktop captures & engineering case studies at [m4qsz.github.io/en](https://m4qsz.github.io/en/))*
+* **Brasas & El Pueblo del Faro:** Cross-platform action adventure (**Flutter** shared package + **Unity 6.3 LTS** `C#` with decoupled simulation & EditMode/PlayMode tests) and Roblox Studio `Luau` / Rojo prototype.
+* **Technical Lab *([7 inspectable demos](https://m4qsz.github.io/en/lab/))***: Verified public modules across **Rust**, **C11 + NASM x64 Assembly**, **C++17**, **PHP 8.2**, and **Swift**.
+
+<details>
+<summary><b>Versión en Español (ES) — Resumen rápido</b></summary>
+
+Desarrollo software multiplataforma de extremo a extremo (PC, móvil y web): interfaces **Flutter/Next.js/Astro**, lógica nativa segura en **Rust (`C-ABI` / `dart:ffi`)**, redes locales **P2P offline-first (`ChaCha20-Poly1305` + CRDT)**, bases locales (`Isar` / `SQLite`) + **PostgreSQL/Supabase**, videojuegos en **Unity (`C#`)** y flujos aplicados con **LLMs**.
+
+* **Portafolio interactivo:** [m4qsz.github.io](https://m4qsz.github.io/)
+* **CV imprimible / ATS:** [m4qsz.github.io/cv](https://m4qsz.github.io/cv/)
+* **Laboratorio con CI verde:** [m4qsz.github.io/laboratorio](https://m4qsz.github.io/laboratorio/)
+* **Contacto directo:** `miguel.270799@gmail.com`
+
+</details>
