@@ -58,7 +58,7 @@ Because my flagship commercial product (**Meson**) lives in a private repository
 * **Brasas & El Pueblo del Faro:** Cross-platform action adventure (**Flutter** shared package + **Unity 6.3 LTS** `C#` with decoupled simulation & EditMode/PlayMode tests) and Roblox Studio `Luau` / Rojo prototype.
 * **Technical Reports & Lab *([m4qsz.github.io/laboratorio](https://m4qsz.github.io/laboratorio/) · [EN Lab](https://m4qsz.github.io/en/lab/))*:**
   * **Cockpit Technical Reports (6):** [Cockpit v2.2 Architecture & Token Optimization](https://m4qsz.github.io/en/lab/cockpit-paper/) · [Zero-Vision MCP Automation](https://m4qsz.github.io/en/lab/cockpit-zero-vision/) · [Local-First Multi-Device P2P](https://m4qsz.github.io/en/lab/cockpit-distributed/) · [Algebraic Context Compression](https://m4qsz.github.io/en/lab/cockpit-algebraic-compression/) · [Crash Resilience & Behavioral Fingerprinting](https://m4qsz.github.io/en/lab/cockpit-resilience-fingerprinting/) · [Automatic RTK, Delta Telemetry & `$0` Pipelines](https://m4qsz.github.io/en/lab/cockpit-rtk-telemetry-pipelines/)
-  * **Meson Technical Reports (4):** [Multi-Currency Finance & Fiscal Hash](https://m4qsz.github.io/en/lab/meson-finance-erp/) · [Modular Multi-Tenant ERP & Atelier HR](https://m4qsz.github.io/en/lab/meson-management-erp/) · [Causal LAN Sync & Courier Mesh](https://m4qsz.github.io/en/lab/meson-offline-mesh/) · [Generational FFI Arenas & Edge AI](https://m4qsz.github.io/en/lab/meson-rust-edge/)
+  * **Meson Technical Reports (5 — all with PDF):** [Multi-Currency Finance & Fiscal Hash](https://m4qsz.github.io/en/lab/meson-finance-erp/) · [Modular Multi-Tenant ERP & Atelier HR](https://m4qsz.github.io/en/lab/meson-management-erp/) · [Causal LAN Sync & Courier Mesh](https://m4qsz.github.io/en/lab/meson-offline-mesh/) · [Generational FFI Arenas & Edge AI](https://m4qsz.github.io/en/lab/meson-rust-edge/) · [NoSQL (Firestore) → SQL (PostgreSQL/RLS) Migration](https://m4qsz.github.io/en/lab/meson-nosql-to-sql/)
   * **Inspectable Demos:** Verified public modules across **Rust**, **Dart**, **C11 + NASM x64 Assembly**, **C++17**, **PHP 8.2**, and **Swift**.
 
 <details>
@@ -69,7 +69,7 @@ Desarrollo software multiplataforma e infraestructura de sistemas de extremo a e
 * **Roles objetivo:** Ingeniero de Sistemas Rust e Infraestructura de Agentes IA (MCP) · Ingeniero Flutter / Rust FFI · Desarrollador Full-Stack TypeScript
 * **Portafolio interactivo:** [m4qsz.github.io](https://m4qsz.github.io/)
 * **CV imprimible / ATS:** [m4qsz.github.io/cv](https://m4qsz.github.io/cv/)
-* **Reportes Técnicos y Laboratorio (CI verde · 10 papers bilingües):** [m4qsz.github.io/laboratorio](https://m4qsz.github.io/laboratorio/) · [Paper Cockpit v2.2](https://m4qsz.github.io/laboratorio/cockpit-paper/) · [Paper 10: RTK & Pipelines $0](https://m4qsz.github.io/laboratorio/cockpit-rtk-telemetry-pipelines/)
+* **Reportes Técnicos y Laboratorio (CI verde · 11 papers bilingües con PDF):** [m4qsz.github.io/laboratorio](https://m4qsz.github.io/laboratorio/) · [Paper Cockpit v2.2](https://m4qsz.github.io/laboratorio/cockpit-paper/) · [Paper 10: RTK & Pipelines $0](https://m4qsz.github.io/laboratorio/cockpit-rtk-telemetry-pipelines/) · [Paper 11: Meson NoSQL → SQL](https://m4qsz.github.io/laboratorio/meson-nosql-to-sql/)
 * **LinkedIn:** [linkedin.com/in/miguel-quevedo-dev](https://www.linkedin.com/in/miguel-quevedo-dev/)
 * **Contacto directo:** `miguel.270799@gmail.com`
 
